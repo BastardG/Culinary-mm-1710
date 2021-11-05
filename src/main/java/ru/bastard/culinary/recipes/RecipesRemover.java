@@ -24,6 +24,10 @@ public class RecipesRemover
             {
                 removerRecipes.remove();
             }
+            else if(itemStack != null && itemStack.getItem() == Items.pumpkin_pie)
+            {
+                removerRecipes.remove();
+            }
         }
     }
 
