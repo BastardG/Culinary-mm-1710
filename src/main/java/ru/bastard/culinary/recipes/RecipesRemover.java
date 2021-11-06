@@ -28,6 +28,10 @@ public class RecipesRemover
             {
                 removerRecipes.remove();
             }
+            else if(itemStack != null && itemStack.getItem() == Items.cookie)
+            {
+                removerRecipes.remove();
+            }
         }
     }
 
