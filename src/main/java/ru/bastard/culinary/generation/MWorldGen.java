@@ -25,7 +25,7 @@ public class MWorldGen implements IWorldGenerator
     }
 
     public void generateOverworld(World world, Random rand, int blockXPos, int blockZPos) {
-        addOreSpawn(ModBlocks.saltOre, Blocks.stone, world, rand, blockXPos, blockZPos, 16, 16, 1, 8, 1, 5, 50, 20, 70);
+
     }
 
     public static void addOreSpawn(Block ore, Block replace, World world, Random rand, int blockXPos, int blockZPos, int maxX, int maxZ,

@@ -11,7 +11,6 @@ import ru.bastard.culinary.items.ModItems;
 
 public class ModBlocks
 {
-
     public static Block milletCrop;
     public static Block maizeCrop;
     public static Block riceCrop;
@@ -19,18 +18,16 @@ public class ModBlocks
     public static Block oatsCrop;
     public static Block ryeCrop;
     public static Block pepperCrop;
-    public static Block saltOre;
 
     public static void init()
     {
-        milletCrop = new MilletBlockCrop().setBlockName("millet crop").setBlockTextureName(Main.MODID + ":milletcrop");
-        maizeCrop = new MaizeBlockCrop().setBlockName("maize crop").setBlockTextureName(Main.MODID + ":maizecrop");
-        riceCrop = new RiceBlockCrop().setBlockName("rice crop").setBlockTextureName(Main.MODID + ":ricecrop");
-        barleyCrop = new BarleyBlockCrop().setBlockName("barley crop").setBlockTextureName(Main.MODID + ":barleycrop");
-        oatsCrop =  new OatsBlockCrop().setBlockName("oats crop").setBlockTextureName(Main.MODID + ":oatscrop");
-        ryeCrop = new RyeBlockCrop().setBlockName("rye crop").setBlockTextureName(Main.MODID + ":ryecrop");
-        pepperCrop = new PepperBlockCrop().setBlockName("pepper crop").setBlockTextureName(Main.MODID + "peppercrop");
-        saltOre = new SaltOreBlock().setBlockName("salt ore").setBlockTextureName(Main.MODID + "saltore").setHardness(2.0F).setStepSound(Block.soundTypeStone);
+        milletCrop = new MilletBlockCrop().setBlockName("millet crop").setBlockTextureName(Main.MODID + ":millet_crop");
+        maizeCrop = new MaizeBlockCrop().setBlockName("maize crop").setBlockTextureName(Main.MODID + ":maize_crop");
+        riceCrop = new RiceBlockCrop().setBlockName("rice crop").setBlockTextureName(Main.MODID + ":rice_crop");
+        barleyCrop = new BarleyBlockCrop().setBlockName("barley crop").setBlockTextureName(Main.MODID + ":barley_crop");
+        oatsCrop =  new OatsBlockCrop().setBlockName("oats crop").setBlockTextureName(Main.MODID + ":oats_crop");
+        ryeCrop = new RyeBlockCrop().setBlockName("rye crop").setBlockTextureName(Main.MODID + ":rye_crop");
+        pepperCrop = new PepperBlockCrop().setBlockName("pepper crop").setBlockTextureName(Main.MODID + "pepper_crop");
         GameRegistry.registerBlock(milletCrop, milletCrop.getUnlocalizedName());
         GameRegistry.registerBlock(maizeCrop, maizeCrop.getUnlocalizedName());
         GameRegistry.registerBlock(riceCrop, riceCrop.getUnlocalizedName());
@@ -38,11 +35,5 @@ public class ModBlocks
         GameRegistry.registerBlock(oatsCrop, oatsCrop.getUnlocalizedName());
         GameRegistry.registerBlock(ryeCrop, ryeCrop.getUnlocalizedName());
         GameRegistry.registerBlock(pepperCrop, pepperCrop.getUnlocalizedName());
-        GameRegistry.registerBlock(saltOre, saltOre.getUnlocalizedName());
     }
-}
-
-class SaltOreBlock extends BlockOre
-{
-
 }
