@@ -10,7 +10,7 @@ done:
 
 planned:
 1. More food and crops
-2. Salt (evaporation or ore)
+2. Salt (evaporation or ore) (DONE)
 3. Figure out how to get rid of seeds in the grass
 4. Fruit trees
 5. Realistic brewing and cheese making
