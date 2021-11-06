@@ -22,12 +22,13 @@ public class ItemRecipes {
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ground_pepper), ModItems.pepper_seeds, ModItems.pestle_and_mortar);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.dough),ModItems.flour, ModItems.flour, ModItems.flour, new ItemStack(Items.potionitem, 4));
         GameRegistry.addRecipe(new ItemStack(ModItems.pestle_and_mortar), "   ", "XYX", "XXX", 'X', Blocks.cobblestone, 'Y', Items.stick);
-        GameRegistry.addRecipe(new ItemStack(ModItems.cake_layer, 3), "SY ", "XXX", "   ", 'S', Items.sugar, 'Y', ModItems.salt, 'X', ModItems.bread);
+        GameRegistry.addRecipe(new ItemStack(ModItems.cake_layer, 3), "SY ", "XXX", "   ", 'S', Items.sugar, 'Y', ModItems.bottle_of_salt, 'X', ModItems.bread);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.apple_pie), ModItems.cake_layer, Items.sugar, Items.apple, Items.egg);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.potato_chicken_pie), ModItems.cake_layer, Items.potato, Items.chicken, ModItems.ground_pepper);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.fish_pie), ModItems.cake_layer, ModItems.boiled_rice, Items.fish, Items.egg);
         GameRegistry.addShapelessRecipe(new ItemStack(ModItems.pumpkin_pie), ModItems.cake_layer, Blocks.pumpkin, Items.sugar, Items.egg);
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.beef_pie), ModItems.beef_mince, ModItems.cake_layer);
-        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.beef_mince), ModItems.salt, ModItems.ground_pepper, ModItems.rice_seeds, Items.egg, Items.beef, Items.sugar);
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.beef_pie), ModItems.fried_beef_mince, ModItems.cake_layer);
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.beef_mince), ModItems.bottle_of_salt, ModItems.ground_pepper, ModItems.rice_seeds, Items.egg, Items.beef, Items.sugar);
+
     }
 }
