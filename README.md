@@ -14,4 +14,4 @@ planned:
 3. Figure out how to get rid of seeds in the grass
 4. Fruit trees
 5. Realistic brewing and cheese making
-6. More animals for meat, add sheep meat
+6. add sheep meat and horse meat, maybe some other sorts of meat
