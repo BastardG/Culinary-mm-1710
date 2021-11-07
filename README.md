@@ -9,6 +9,7 @@ done:
 3. Food (More will be added in next patches)
 4. added sheep meat and horse meat
 5. Salt (evaporating)
+
 planned:
 1. More food and crops
 2. Figure out how to get rid of seeds in the grass
