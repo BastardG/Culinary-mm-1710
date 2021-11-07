@@ -18,6 +18,7 @@ public class ModBlocks
     public static Block oatsCrop;
     public static Block ryeCrop;
     public static Block pepperCrop;
+    public static Block peaCrop;
 
     public static void init()
     {
@@ -27,7 +28,8 @@ public class ModBlocks
         barleyCrop = new BarleyBlockCrop().setBlockName("barley crop").setBlockTextureName(Main.MODID + ":barley_crop");
         oatsCrop =  new OatsBlockCrop().setBlockName("oats crop").setBlockTextureName(Main.MODID + ":oats_crop");
         ryeCrop = new RyeBlockCrop().setBlockName("rye crop").setBlockTextureName(Main.MODID + ":rye_crop");
-        pepperCrop = new PepperBlockCrop().setBlockName("pepper crop").setBlockTextureName(Main.MODID + "pepper_crop");
+        pepperCrop = new PepperBlockCrop().setBlockName("pepper crop").setBlockTextureName(Main.MODID + ":pepper_crop");
+        peaCrop = new PeaBlockCrop().setBlockName("pea crop").setBlockTextureName(Main.MODID + ":pea_crop");
         GameRegistry.registerBlock(milletCrop, milletCrop.getUnlocalizedName());
         GameRegistry.registerBlock(maizeCrop, maizeCrop.getUnlocalizedName());
         GameRegistry.registerBlock(riceCrop, riceCrop.getUnlocalizedName());
@@ -35,5 +37,6 @@ public class ModBlocks
         GameRegistry.registerBlock(oatsCrop, oatsCrop.getUnlocalizedName());
         GameRegistry.registerBlock(ryeCrop, ryeCrop.getUnlocalizedName());
         GameRegistry.registerBlock(pepperCrop, pepperCrop.getUnlocalizedName());
+        GameRegistry.registerBlock(peaCrop, peaCrop.getUnlocalizedName());
     }
 }

@@ -7,6 +7,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import ru.bastard.culinary.blocks.ModBlocks;
 import ru.bastard.culinary.events.ModEventHandler;
 import ru.bastard.culinary.events.ModFMLEventHandler;

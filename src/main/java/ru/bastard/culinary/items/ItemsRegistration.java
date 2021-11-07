@@ -41,5 +41,10 @@ public class ItemsRegistration
         GameRegistry.registerItem(ModItems.tea, ModItems.tea.getUnlocalizedName());
         GameRegistry.registerItem(ModItems.green_tea, ModItems.green_tea.getUnlocalizedName());
         GameRegistry.registerItem(ModItems.coffee, ModItems.coffee.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.pea, ModItems.pea.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.horse_fried_meat, ModItems.horse_fried_meat.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.pea_soup_with_horse_meat, ModItems.pea_soup_with_horse_meat.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.sheep_meat, ModItems.sheep_meat.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.sheep_fried_meat, ModItems.sheep_fried_meat.getUnlocalizedName());
     }
 }

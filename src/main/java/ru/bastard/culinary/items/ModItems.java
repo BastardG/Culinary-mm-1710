@@ -1,18 +1,22 @@
 package ru.bastard.culinary.items;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
-import net.minecraft.item.*;
+import net.minecraft.item.EnumAction;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemFood;
+import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraft.util.ChatComponentText;
+import net.minecraft.util.ChatStyle;
+import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
-import ru.bastard.culinary.Main;
-import ru.bastard.culinary.blocks.ModBlocks;
+
+import java.awt.*;
+import java.util.Iterator;
+import java.util.List;
 
 public class ModItems extends Items {
     public static Item dough;
@@ -50,6 +54,12 @@ public class ModItems extends Items {
     public static Item tea;
     public static Item green_tea;
     public static Item coffee;
+    public static Item pea;
+    public static Item horse_meat;
+    public static Item horse_fried_meat;
+    public static Item pea_soup_with_horse_meat;
+    public static Item sheep_meat;
+    public static Item sheep_fried_meat;
 
     public static void init()
     {
@@ -146,5 +156,32 @@ class ItemCoffeeDrink extends ItemFood{
     }
     public EnumAction getItemUseAction(ItemStack is) {
         return EnumAction.drink;
+    }
+}
+
+class ItemPeaSoup extends ItemFood {
+
+    public ItemPeaSoup(int hunger, float saturation, boolean can_eaten_by_dogs) {
+        super(hunger, saturation, can_eaten_by_dogs);
+        setMaxStackSize(1);
+    }
+
+    public ItemStack onEaten(ItemStack is, World world, EntityPlayer player){
+        super.onEaten(is, world, player);
+        if(!world.isRemote) {
+            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 5 * 20, 5));
+            player.addChatMessage(new ChatComponentText("YX BLYA!!!!!"));
+            player.inventory.addItemStackToInventory(new ItemStack(Items.bowl));
+        }
+        return is;
+    }
+    public int getMaxItemUseDuration(ItemStack is){
+        return 5*20;
+    }
+}
+class ItemHorseMeat extends ItemFood{
+
+    public ItemHorseMeat(int hunger, float saturation, boolean can_be_eaten_by_dogs) {
+        super(hunger, saturation, can_be_eaten_by_dogs);
     }
 }
