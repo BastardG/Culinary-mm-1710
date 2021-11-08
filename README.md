@@ -16,3 +16,4 @@ planned:
 3. Fruit trees
 4. Realistic brewing and cheese making
 6. add some other sorts of meat and animals who drops it (it may not be added)
+7. NEI Integration
