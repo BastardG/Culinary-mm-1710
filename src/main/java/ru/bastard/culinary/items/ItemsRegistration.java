@@ -42,9 +42,12 @@ public class ItemsRegistration
         GameRegistry.registerItem(ModItems.green_tea, ModItems.green_tea.getUnlocalizedName());
         GameRegistry.registerItem(ModItems.coffee, ModItems.coffee.getUnlocalizedName());
         GameRegistry.registerItem(ModItems.pea, ModItems.pea.getUnlocalizedName());
-        GameRegistry.registerItem(ModItems.horse_fried_meat, ModItems.horse_fried_meat.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.horse_cooked_meat, ModItems.horse_cooked_meat.getUnlocalizedName());
         GameRegistry.registerItem(ModItems.pea_soup_with_horse_meat, ModItems.pea_soup_with_horse_meat.getUnlocalizedName());
-        GameRegistry.registerItem(ModItems.sheep_meat, ModItems.sheep_meat.getUnlocalizedName());
-        GameRegistry.registerItem(ModItems.sheep_fried_meat, ModItems.sheep_fried_meat.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.mutton, ModItems.mutton.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.cooked_mutton, ModItems.cooked_mutton.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.stone_knife, ModItems.stone_knife.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.iron_knife, ModItems.iron_knife.getUnlocalizedName());
+        GameRegistry.registerItem(ModItems.diamond_knife, ModItems.diamond_knife.getUnlocalizedName());
     }
 }

@@ -6,6 +6,10 @@ import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingDropsEvent;
 import ru.bastard.culinary.blocks.ModBlocks;
@@ -24,10 +28,24 @@ public class Main
     public static final String MODID = "culinary";
     public static final String VERSION = "1.0";
     public static final String NAME = "Culinary";
+    public static CreativeTabs tabCulinaryFood;
+    public static CreativeTabs tabCulinaryOther;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        tabCulinaryFood = new CreativeTabs("Culinary Food") {
+            @Override
+            public Item getTabIconItem() {
+                return ModItems.beef_pie;
+            }
+        };
+        tabCulinaryOther = new CreativeTabs("Culinary Other") {
+            @Override
+            public Item getTabIconItem() {
+                return ModItems.iron_knife;
+            }
+        };
         ModBlocks.init();
         ModItems.init();
         GenerationRegistry.init();

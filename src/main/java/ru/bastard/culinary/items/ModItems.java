@@ -2,21 +2,12 @@ package ru.bastard.culinary.items;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
-import net.minecraft.item.EnumAction;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemStack;
+import net.minecraft.item.*;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ChatComponentText;
-import net.minecraft.util.ChatStyle;
-import net.minecraft.util.IChatComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
-
-import java.awt.*;
-import java.util.Iterator;
-import java.util.List;
 
 public class ModItems extends Items {
     public static Item dough;
@@ -56,10 +47,18 @@ public class ModItems extends Items {
     public static Item coffee;
     public static Item pea;
     public static Item horse_meat;
-    public static Item horse_fried_meat;
+    public static Item horse_cooked_meat;
     public static Item pea_soup_with_horse_meat;
-    public static Item sheep_meat;
-    public static Item sheep_fried_meat;
+    public static Item mutton;
+    public static Item cooked_mutton;
+    public static Item wheat_cereal;
+    public static Item millet_cereal;
+    public static Item barley_cereal;
+    public static Item oats_cereal;
+    public static Item rye_cereal;
+    public static Item stone_knife;
+    public static Item iron_knife;
+    public static Item diamond_knife;
 
     public static void init()
     {
@@ -169,7 +168,7 @@ class ItemPeaSoup extends ItemFood {
     public ItemStack onEaten(ItemStack is, World world, EntityPlayer player){
         super.onEaten(is, world, player);
         if(!world.isRemote) {
-            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 5 * 20, 5));
+            player.addPotionEffect(new PotionEffect(Potion.confusion.id, 10 * 20, 5));
             player.addChatMessage(new ChatComponentText("YX BLYA!!!!!"));
             player.inventory.addItemStackToInventory(new ItemStack(Items.bowl));
         }
@@ -184,4 +183,16 @@ class ItemHorseMeat extends ItemFood{
     public ItemHorseMeat(int hunger, float saturation, boolean can_be_eaten_by_dogs) {
         super(hunger, saturation, can_be_eaten_by_dogs);
     }
+}
+class ItemKnife extends Item
+{
+    private final Item.ToolMaterial knifeToolMaterial;
+    public ItemKnife(ToolMaterial toolMaterial)
+    {
+        this.knifeToolMaterial = toolMaterial;
+        this.isItemTool();
+        this.setMaxStackSize(1);
+    }
+
+    private void isItemTool() {}
 }

@@ -35,6 +35,6 @@ public class ItemRecipes {
         GameRegistry.addRecipe(new ItemStack(ModItems.dark_chocolate), "CCC", "CWC", "CCC", 'C', ModItems.cocoa_powder, 'W', Items.water_bucket);
         GameRegistry.addRecipe(new ItemStack(ModItems.milk_chocolate), "SSS","SMC","CCC", 'S',Items.sugar, 'M', Items.milk_bucket, 'C', ModItems.cocoa_powder);
         GameRegistry.addShapelessRecipe(new ItemStack(Items.cookie, 8), ModItems.dough_for_cookies, ModItems.milk_chocolate);
-        GameRegistry.addRecipe(new ItemStack(ModItems.pea_soup_with_horse_meat), "SPW", "GGG", "HBH",'S', ModItems.bottle_of_salt, 'P' ,ModItems.ground_pepper, 'W', Items.potionitem, 'G', ModItems.pea, 'H', ModItems.horse_fried_meat, 'B', Items.bowl);
+        GameRegistry.addRecipe(new ItemStack(ModItems.pea_soup_with_horse_meat), "SPW", "GGG", "HBH",'S', ModItems.bottle_of_salt, 'P' ,ModItems.ground_pepper, 'W', Items.potionitem, 'G', ModItems.pea, 'H', ModItems.horse_cooked_meat, 'B', Items.bowl);
     }
 }
